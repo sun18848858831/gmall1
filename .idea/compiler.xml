@@ -7,17 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gmall" />
+        <module name="demo2" />
         <module name="demo1" />
-        <module name="syhgmall" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="gmall-service" target="1.8" />
+      <module name="syhgmall" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo1" options="-parameters" />
+      <module name="demo2" options="-parameters" />
       <module name="gmall-service" options="-parameters" />
       <module name="syhgmall" options="-parameters" />
     </option>
